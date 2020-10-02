@@ -1,0 +1,33 @@
+.right-column{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    width: 600px;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.bar{
+    display: flex;
+    justify-content: start;
+    margin: 2px;
+    padding: 2px;
+   
+}
+.fill{
+    background-color: rgb(101, 136, 156);
+    animation-name: fillbar;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+}
+@keyframes fillbar{
+    0%{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    100%{
+    opacity: 1;  
+    transform: translateX(0);
+    }
+}

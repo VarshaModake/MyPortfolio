@@ -21,7 +21,7 @@ render()
                 <div>
                     <p>I live in London, and code every day.</p>
                     <p>My Favorite language is JavaScript, and I think React Js is awesome. </p>
-                    <p>Beside coding I also like to cook and watch a movie.</p>
+                    <p>Beside coding I also like to travel.</p>
                     <button onClick={this.toggleDisplayBio}>show less</button>
                 </div>) : (<div>
                 <button onClick={this.toggleDisplayBio} >Read More</button></div>)
