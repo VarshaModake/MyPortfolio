@@ -1,15 +1,20 @@
 import React,{Component} from 'react';
 import {Link} from 'react-router-dom';
 import '../CSS/NavBar.css';
-export default function NavBar(){
+
+
+const NavBar=({children})=>{
   return (
+    <div className="mainWrapper">
         <div className="navBarWrapper">
-           
+          
             <ul id="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Jokes</a></li>
-            <li><a href="#">Music Master</a></li>
+           <li> <Link to='/'>About Me</Link></li>
+           <li> <Link to='/Jokes'>Jokes</Link></li>
+           <li> <Link to="/">Music Master</Link></li>
             </ul> 
+            </div>
+            {children}
             </div>
         
         
@@ -17,3 +22,5 @@ export default function NavBar(){
     )
 
   }
+
+  export default NavBar;

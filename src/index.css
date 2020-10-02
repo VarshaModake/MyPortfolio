@@ -5,8 +5,40 @@ body{
   font-size: 16px;
  
  font-family: 'Ubuntu', sans-serif;
-  background-color:#83f1d652;
-  
+  /* background-color:#83f1d652; */
+  margin: 0;
+  padding: 0;
 }
 
+h1,h2,h3,h4,h5,h6,strong{
+  font-weight: 400;
+}
 
+.navBarWrapper::before{
+  content: '';
+  background: url('./Assets/background_1.jpg');
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  z-index: -1;
+  opacity: 1;
+}
+
+.JokeWrapper{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: 900px;
+  padding-top: 2%;
+}
+
+button{
+  display: block;
+  width:100px;
+  height: 30px;
+  margin: auto;
+  border-radius: 5px;
+  
+}

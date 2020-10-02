@@ -3,9 +3,9 @@
 }
 
 #profilePic{
-    width: 150px;
-    height: 150px;
-    border-radius: 75px;
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
     object-fit: cover;
     margin: auto;
   }

@@ -3,14 +3,15 @@ import '../CSS/App.css';
 import NavBar from './NavBar';
 import Skills from './Skills';
 import Profile from './Profile';
+import Projects from './Projects';
+
 
 function App() {
   return (
     <div className="App">
-      
-    <NavBar />
-   <Profile/>
-   <Skills />
+    <Profile/>
+    <Skills />
+    <Projects />
     </div>
   );
 }
