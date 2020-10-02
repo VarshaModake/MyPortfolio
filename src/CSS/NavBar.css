@@ -1,0 +1,23 @@
+.navBarWrapper{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    height: 72px;
+    color: rgb(64, 61, 228);
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navBarWrapper ul{
+    display: inline;
+}
+
+.navBarWrapper li{
+    display: inline;
+    padding:30px;
+}
+
+.navBarWrapper li a{
+    font-style: italic;
+    font-size: medium;
+}
