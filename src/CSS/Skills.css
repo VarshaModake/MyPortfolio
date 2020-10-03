@@ -1,11 +1,11 @@
 .right-column{
     display: flex;
     flex-direction: column;
-    padding: 2px;
-    width: 600px;
+    padding: 1%;
+    width: 80%;
     justify-content: center;
     margin: auto;
-    
+ 
 }
 
 .bar{

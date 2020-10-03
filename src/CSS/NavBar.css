@@ -1,8 +1,7 @@
 .navBarWrapper{
     display: flex;
     width: 100%;
-    height: 40px;
-    height: 39px;
+    margin-top: 2px;
     color: rgb(64, 61, 228);
     flex-direction: row;
     justify-content: center;
@@ -16,14 +15,11 @@
 }
 
 .navBarWrapper li{
-    /* display: inline; */
-    /* padding:30px; */
-
     display: inline-block;
     background: #fff;
     border: solid 1px #f1f1f1;
-    border-bottom: 0px;
-    border-radius: 10px;
+    
+    border-radius: 0.2%;
     -moz-border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px 4px 0 0;
     margin-right: 10px;
@@ -31,11 +27,12 @@
     padding: 10px 40px 10px 40px;
 }
 .navBarWrapper li a{
-    font-size: 12px;
+    font-size: 1em;
     font-weight: bold;
 }
 .mainWrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width:100%;
 }
