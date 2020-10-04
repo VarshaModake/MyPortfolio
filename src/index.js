@@ -7,7 +7,7 @@ import App from './Component/App';
 import * as serviceWorker from './serviceWorker';
 import Jokes from './Component/Joke';
 import NavBar from './Component/NavBar';
-
+import Contact from './Component/Contact';
 ReactDOM.render(
   <Router history={createBrowserHistory()}>
   <React.StrictMode>
@@ -15,7 +15,7 @@ ReactDOM.render(
       <Switch>
       <Route exact path='/' render={()=><NavBar><App /></NavBar>}/>
         <Route path='/Jokes' render={()=><NavBar><Jokes /></NavBar>}/>
-        <Route path='/' render={()=><NavBar><App /></NavBar>}/>
+        <Route path='/Contact' render={()=><NavBar><Contact /></NavBar>}/>
       </Switch>
   </React.StrictMode>  </Router>,
   document.getElementById('root')

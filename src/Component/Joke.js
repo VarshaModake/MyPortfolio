@@ -22,6 +22,7 @@ render()
 {
     return(
         <div className="JokeWrapper">
+            <div>
             <h2>Highlited Joke</h2>
             <Joke joke={this.state.Joke} />
             < hr/>
@@ -29,7 +30,7 @@ render()
             <button onClick={this.fetchJokes}>Click Me!</button>{
                 this.state.JokeArray.map(jokeItem=>(<Joke key={jokeItem.id} joke={jokeItem} />))
             }
-
+            </div>
         </div>
     )
 }

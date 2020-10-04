@@ -1,12 +1,11 @@
 .ProfileWrapper{
     display: inline-block;
-    width:49rem;
+    margin: auto;
 }
 
 #profilePic{
-    width: 180px;
-    height: 180px;
-    border-radius: 90px;
+    width: 20%;
+    border-radius: 50%;
     object-fit: cover;
     margin: auto;
   }

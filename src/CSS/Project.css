@@ -1,17 +1,34 @@
 .projectsWrapper{
-    display:grid;
-    grid-template-columns: 1fr;
+    display:flex;
+    /* grid-template-columns: auto; */
+    flex-direction: column;
     margin: 1%;
     border-top: 1px solid gray;
-    }
+    width:98%;
+    text-overflow: inherit;
     
+    justify-items: center;
+   
+    }
+    .projectsWrapper h2{
+       
+        overflow-wrap: break-word;
+    }
     #projectItem{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         justify-items: center;
+       
+        
+    }
+    #projectItem img{
+        width:100%;
     }
     #projectItem Div{
     display: block;
     padding: 0 3%;
+    border : 1px solid black;
+    margin: 2%;
+    width:30%;
     }

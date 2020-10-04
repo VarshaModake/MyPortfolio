@@ -11,7 +11,7 @@ const NavBar=({children})=>{
             <ul id="navbar">
            <li> <Link to='/'>About Me</Link></li>
            <li> <Link to='/Jokes'>Jokes</Link></li>
-           <li> <Link to="/">Music Master</Link></li>
+           <li> <Link to="/Contact">Contact Me</Link></li>
             </ul> 
             </div>
             {children}

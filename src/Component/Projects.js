@@ -5,11 +5,11 @@ import '../CSS/Project.css';
 const Project=(props)=>{
     const {title,description,image,link}=props.project;
     return(
-        <div style={{display:'inline-block' ,margin:2 , width: 300}}>
+        <div>
         <h4>{title}</h4>
-        <img src={image} alt='profile' style={{width:200,height:100}} ></img>
+        <img src={image} alt='profile'></img>
         <p>{description}</p>
-        <a href={link}>{link}</a>
+        <a href={link} target="_blank">{link}</a>
     </div>
     )
 }
@@ -17,7 +17,7 @@ const Project=(props)=>{
 const  Projects=()=>(
     <div className="projectsWrapper">
        
-        <h2>Highlighted Project</h2>
+        <h3>Highlighted Project</h3>
         <div id="projectItem">
             {
                 ProjectList.map(PROJECT=>{
