@@ -1,34 +1,65 @@
 .navBarWrapper{
-    margin-top: 2px;
+     margin-top: 2%;
     color: rgb(64, 61, 228);
-    justify-content: center;
+    width:65%;
     
-}
-.navBarWrapper ul{
-    display: flex;
+  }
+
+#navbar{
     margin: 0;
     padding: 0px;
     text-align: center;
-   
+    width: 100%;
 }
-.navBarWrapper li{
+.tab{
     display: inline-block;
     background:var(--mainColor);
     border: solid 1px #f1f1f1;
     border-radius: 0.1%;
     -moz-border-radius: 2px 2px 0 0;
     -webkit-border-radius: 2px 2px 0 0;
-    margin-right: 2px ;
+    margin-right: 0.5em ;
+    zoom: 1;
     text-transform: uppercase;
-    padding: 5px 40px 5px 40px;
+    list-style: none;
+    width: 30%;
 }
-.navBarWrapper li a{
-    font-size: 0.8rem;
+.tab a{
+    display: block;
+      font-size: 0.8rem;
     font-weight: bold;
     text-decoration: none;
+    text-decoration: none;
+    
+    
+}
+.tab.Active {
+    background: #fff;
+    position: relative;
+    top: 1%;
+    border-color: #f1f1f1;
+    border-bottom: none;
+}
+.tab.Active a {
+    padding-top: 10px;
+    color: #e74c3c;
 }
 .mainWrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.navBar{
+    margin-top: 2px;
+    color: rgb(64, 61, 228);
+    justify-content: center;
+
+}
+
+@media only screen and (min-width:1024px)
+{
+  .tab a{
+    padding: 6px 21px;
+  }
+}
+

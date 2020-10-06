@@ -27,6 +27,7 @@ a{
 p{
   text-size-adjust:inherit;
 }
+
 #root{
   display: grid;
   align-items: center;
@@ -35,17 +36,7 @@ p{
   
   
 }
-/* .navBarWrapper::before{
-  content: '';
-  background: url('./Assets/background_1.jpg');
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-repeat: repeat-y;
-object-fit: cover;
-  z-index: -1;
-  opacity: 1;
-} */
+  
 
 .JokeWrapper{
   
@@ -53,7 +44,7 @@ object-fit: cover;
   flex-direction: column;
   justify-content: center;
   background-color:var(--mainColor);
-  width: 70vw;
+
   height: 100%;
   padding-top: 2%;
   justify-items: center;
@@ -77,29 +68,52 @@ button{
   text-size-adjust: inherit;
 }
 
-@media only screen  and (max-width:900px)
+
+
+@media only screen  and (max-width:899px)
 {
-    .navBarWrapper ul{
-      flex-direction: column;
-      justify-content: flex-start;
-  }
+  
   #projectItem{
     flex-direction: column;
     align-items: center;
     margin: 0;
+   width:100%;
   }
   .ProfileWrapper{
     align-items: center;
     
   }
-  
+  .tab a{
+    padding: 1px 0px ;
+  }
   body{
     font-size: 20px;
   }
   .ContactWrapper{
     flex-direction: column;
   }
+
+  #navbar{
+    display: flex;
+    
+  }
+  .App{
+    width:98vw;
+  }
+  .JokeWrapper{
+    width: 98vw;
+  }
+  .ContactWrapper{
+    width:98vw;
+    }
 } 
+
+@media only screen  and (min-width:899px)
+{
+  .JokeWrapper{
+  width:70vw;
+  }
+}
 
 @media only screen and (max-width:299px)
 {
@@ -112,6 +126,7 @@ button{
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
+    width: 247%;
   }
   .ContactWrapper{
     grid-template-columns: 1fr;
@@ -120,4 +135,13 @@ button{
     'phone' 
     'skype';
   }
+  #alignItem{
+    display: block;
+  }
+  .JokeWrapper{
+    width: 98vw;
+  }
+  .ContactWrapper{
+    width:98vw;
+    }
 }
