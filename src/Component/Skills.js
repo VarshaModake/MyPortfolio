@@ -5,7 +5,7 @@ export default function Skills(){
     return(
         <div className="right-column">
             <div >
-              <h3>TOP EXPERTISE</h3>
+              <h3>SKILLS SET</h3>
             </div>
             <div className="bar">
               <div className="bar fill" style={{ width: '90%'}}>

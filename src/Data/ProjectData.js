@@ -11,7 +11,7 @@ const ProjectList=[
     },
     {
         id:2,
-        title:'Candy Crush',
+        title:'Game App: Candy Crush',
         description:'A Javascript Program that I build from scratch!',
         link:'https://github.com/VarshaModake/CandyCrush',
         image:image2

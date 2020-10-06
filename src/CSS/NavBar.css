@@ -1,6 +1,6 @@
 .navBarWrapper{
      margin-top: 2%;
-    color: rgb(64, 61, 228);
+    color: rgb(102, 102, 107);
     width:65%;
     
   }
@@ -25,7 +25,7 @@
     width: 30%;
 }
 .tab a{
-    display: block;
+    display: inline-block;
       font-size: 0.8rem;
     font-weight: bold;
     text-decoration: none;

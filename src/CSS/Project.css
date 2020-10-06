@@ -1,18 +1,18 @@
 .projectsWrapper{
     display:flex;
-    /* grid-template-columns: auto; */
     flex-direction: column;
-    margin: 1%;
+  height: 100vh;
     border-top: 1px solid gray;
     width:98%;
     text-overflow: inherit;
-    
     justify-items: center;
-   
+    background-color: var(--mainColor);
+    
     }
-    .projectsWrapper h2{
+    .projectsWrapper h3{
        
         overflow-wrap: break-word;
+        text-align: center;
     }
     #projectItem{
         display: flex;
@@ -20,7 +20,9 @@
         justify-content: center;
         justify-items: center;
        
-        
+        -webkit-box-shadow: 7px 0px 20px -3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 7px 0px 20px -3px rgba(0,0,0,0.75);
+        box-shadow: 7px 0px 20px -3px rgba(0,0,0,0.75);
     }
     #projectItem img{
         width:100%;
@@ -32,5 +34,3 @@
     margin: 2%;
     width:30%;
     }
-
-    

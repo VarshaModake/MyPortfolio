@@ -1,9 +1,10 @@
 import React,{useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import '../CSS/NavBar.css';
-import {faAlignJustify} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import {faUser}from '@fortawesome/free-solid-svg-icons';
+import {faEnvelopeSquare} from '@fortawesome/free-solid-svg-icons';
+import {faHeart} from '@fortawesome/free-solid-svg-icons';
 const NavBar=({children})=>{
 
   useEffect(()=>{
@@ -33,9 +34,9 @@ const NavBar=({children})=>{
         
         
             <ul id="navbar">
-           <li className="tab"> <Link to='/' >About Me</Link></li>
-           <li className="tab"> <Link to='/Jokes'>Jokes</Link></li>
-           <li className="tab"> <Link to='/Contact' >Contact Me</Link></li>
+           <li className="tab"> <FontAwesomeIcon icon={faUser} size='1x'></FontAwesomeIcon><Link to='/' >About Me</Link></li>
+           <li className="tab"> <FontAwesomeIcon icon={faHeart} size='1x'></FontAwesomeIcon><Link to='/Projects'>Projects</Link></li>
+           <li className="tab"> <FontAwesomeIcon icon={faEnvelopeSquare} size='1x'></FontAwesomeIcon><Link to='/Contact' >Contact Me</Link></li>
             </ul> 
            
             </div>

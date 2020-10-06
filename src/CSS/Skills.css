@@ -17,7 +17,8 @@
 }
 
 .fill{
-    background-color: rgb(101, 136, 156);
+    background-color: rgb(215 162 111);
+    color: rgb(7 7 7);
     animation-name: fillbar;
     animation-duration: 4s;
     animation-iteration-count: 2;
