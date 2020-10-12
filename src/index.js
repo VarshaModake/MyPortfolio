@@ -8,6 +8,8 @@ import * as serviceWorker from './serviceWorker';
 import Projects from './Component/Projects';
 import NavBar from './Component/NavBar';
 import Contact from './Component/Contact';
+import Summary from './Component/Summary';
+
 ReactDOM.render(
   <Router history={createBrowserHistory()}>
   <React.StrictMode>
@@ -16,6 +18,7 @@ ReactDOM.render(
       <Route exact path='/' render={()=><NavBar><App /></NavBar>}/>
         <Route path='/Projects' render={()=><NavBar><Projects /></NavBar>}/>
         <Route path='/Contact' render={()=><NavBar><Contact /></NavBar>}/>
+        <Route path='/Summary' render={()=><NavBar><Summary /></NavBar>}/>
       </Switch>
   </React.StrictMode>  </Router>,
   document.getElementById('root')

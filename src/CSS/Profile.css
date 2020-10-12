@@ -1,161 +1,80 @@
-  .intro-wrapper{
+ 
+ .intro-wrapper{
     display: grid;
-    border-radius: 7px 7px 0 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:  auto;
-    background-color: var(--secondaryColor);
     grid-template-areas: 
     'left-column center-column right-column';
-    -webkit-box-shadow: 7px 0px 20px -3px rgba(0,0,0,0.75);
--moz-box-shadow: 7px 0px 20px -3px rgba(0,0,0,0.75);
-box-shadow: 7px 0px 20px -3px rgba(0,0,0,0.75);
-
+    column-gap: 1%;
+    width: 98%;
+    margin: auto;
+    
 }
 
 .left-column{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 3em;
     grid-area: left-column;
 }
 
-#profile-pic{
-    display: block;
-    margin:0 auto;
-    height: 30vh;
-    width: 40%;
-    object-fit: cover;
-    border: 2px solid gray;
-}
+.title-fade-out{
+    opacity: 0;
+    animation-name: fade-out;
+    animation-duration: 2s;
+    color: black;
+  }
+  .title-fade-in{
+    opacity: 100;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    color: black;
+  }
+  
+  @keyframes fade-in{
+    from{opacity: 0;}
+    to{opacity: 100;}
+  }
+  
+  @keyframes fade-out{
+  from{opacity: 100;}
+  to{opacity: 0;}
+  }
 
-
-#theme-option-wrapper{
-    display: flex;
-    justify-content: center;
-    padding:15px;
-}
-
-.theme-dot{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    border:2px solid var(--themedotborder);
-    background-color: black;
-    
-    margin:5px;
-    -webkit-box-shadow: 7px 0px 20px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 7px 0px 20px -3px rgba(0,0,0,0.75);
-    box-shadow: 7px 0px 20px -3px rgba(0,0,0,0.75);
-    
-}
-
-.theme-dot:hover{
-    border-width: 5px;
-    border-color: white;
-}
-#light-Mode{
-    background-color: var(--mainColor);
-}
-#blue-Mode{
-    background-color: rgb(83, 83, 245);
-}
-#green-Mode{
-    background-color: rgb(78, 236, 78);
-}
-#purple-Mode{
-    background-color: rgb(241, 69, 241);
-}
-#setting-note{
-    font-size: 15px;
-    text-align: center;
-    font-style: italic;
-}
 .center-column{
    display: grid;
     grid-area:center-column;
-  align-content: center;
-  padding-bottom: 50px;
-  padding-top:30px;
+    padding-bottom: 3em;
+  padding-top:6em;
+  justify-content: center;
 }
 #preview-shadow{
-    width: 60%;
-    height: 16vh;
+    width: 75%;
+    height: 25vh;
     background-color: var(--previewShadow);
-    padding-left: 30px;
-    padding-top: 30px;
+    padding:3em;
+    text-align: center;
+    justify-content: start;
 }
-#preview{
-    width:100%;
-    border:1.5px solid rgb(29, 120, 238);
-    background-color: var(--previewBG);
-    padding:1%;
-    position: relative;
-}
-.corner-dot{
-    width:7px;
-    height: 7px;
-    border-radius: 50%;
-    border:1.5px solid rgb(29, 120, 238);
-    background-color: #FFF;
-    position: absolute;
-}
-#corner-tl{
-    top:-5px;
-    left:-5px;
-}
-#corner-tr{
-    top:-5px;
-    right:-5px;
-}
-#corner-bl{
-    bottom:-5px;
-    left:-5px;
-}
-#corner-br{
-    bottom:-5px;
-    right:-5px;
-}
+
 
 .right-column{
    
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
     flex-direction: column;
-    
+    grid-area:right-column;
     
 }
-.about-wrapper{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    background-color: var(--secondaryColor);
-    padding-left: 30px;
    
-    }
- #about-me{
-    text-align: start;
- }   
 p{
-    color: gray;
+    color: rgb(36, 35, 35);
     margin: 0 0 10px;
 }
 
-#resume{
-     margin: auto;
-}
-@media screen and (max-width:1200px)
+@media screen and (max-width:1024px)
 {
-    .main-container{
-        width: 95%;
-        
-    } 
-} 
-
-a{
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: bold;
-}
-@media screen and (max-width:1200px)
-{
+    body{
+        font-size: 15px;
+    }
     .intro-wrapper{
         display: grid;
         border-radius: 7px 7px 0 0;
@@ -165,13 +84,18 @@ a{
         'left-column'
         'center-column'
         'right-column';
-         
+        row-gap: 3%;
+
     } 
     .center-column{
         justify-content: center;
     }
+    .right-column{
+        justify-content: center;
+        margin: auto;
+    }
 } 
-@media screen and (max-width:400px)
+@media screen and (max-width:600px)
 {
     .left-column{
         padding: 0;
@@ -180,20 +104,15 @@ a{
     .center-column{
         padding: 0;
     }
-    #profile-pic{
-        margin: 0 24%;
-    }
+    
     #theme-option-wrapper{
         padding: 0;
     }
     #preview-shadow{
-        height: 20vh;
-        width: 70%;
-    }
-    #preview{
-        height: 20vh;
-    }
-    .about-wrapper{
+        height: 31vh;
+        width: 100%;
         padding: 0;
     }
+   
+    
 }

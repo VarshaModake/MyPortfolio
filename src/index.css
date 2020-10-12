@@ -8,11 +8,16 @@
 html,body{
    margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', sans-serif;
-  background-color: black;
+  font-family: 'Roboto Slab', serif;
   font-size: 15px;
-  overflow-y: scroll;
- width:100%;
+  width:100%;
+  overflow:auto;
+  
+}
+body{
+  background: url(./Assets/BackGround.jpg);
+ 
+  object-fit: cover;
   
 }
 
@@ -20,16 +25,18 @@ h1,h2,h3,h4,h5,h6,strong{
  color:var(--mainText);
   font-weight: bold;
   text-size-adjust:inherit;
-  font-weight: 400;
+  
 }
+
 h1{font-size: 56px;}
 h2{font-size:36px;}
 h3{font-size:28px;}
 h4{font-size:24px;}
 h5{font-size:20px;}
 h6{font-size:16px;}
+
 a{
-  font-size: 1rem;
+  font-size: 0.9rem;
   overflow-wrap: break-word;
 }
 
@@ -44,38 +51,6 @@ a{
 }
   
 
-.JokeWrapper{
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color:var(--mainColor);
-
-  height: 100%;
-  padding-top: 2%;
-  justify-items: center;
-  text-align: center;
-}
-.JokeWrapper div{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
-  margin: auto;
-  
-}
-
-button{
-  display: block;
-  width:20%;
-  height: 5%;
-  margin: 1% 40%;
-  border-radius: 5px;
-  text-size-adjust: inherit;
-}
-
-
-
 @media only screen  and (max-width:899px)
 {
   
@@ -83,11 +58,12 @@ button{
     flex-direction: column;
     align-items: center;
     margin: 0;
-   width:100%;
+    width:100%;
   }
+  
   .ProfileWrapper{
     align-items: center;
-    
+    height: 200vh;
   }
   .tab a{
     padding: 1px 0px ;
@@ -99,10 +75,7 @@ button{
     flex-direction: column;
   }
 
-  #navbar{
-    display: flex;
-    
-  }
+  
   .App{
     width:98vw;
   }
@@ -112,27 +85,40 @@ button{
   .ContactWrapper{
     width:98vw;
     }
+  
 } 
 
 @media only screen  and (min-width:899px)
 {
-  .JokeWrapper{
-  width:70vw;
+  .projectsWrapper{
+  height:100vh;
   }
+ 
 }
-
+@media only screen and (max-width:500px)
+{
+  #projectItem{
+    width: 100%;
+  }
+  .fa-5x{
+    font-size: 2em;
+  }
+  #Phone h3{
+    font-size: 18px;
+  } 
+}
 @media only screen and (max-width:299px)
 {
   .projectsWrapper{
     justify-items: left;
     margin: 0;
-  }
+    }
   
   #projectItem{
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
-    width: 247%;
+    /* width: 247%; */
   }
   .ContactWrapper{
     grid-template-columns: 1fr;

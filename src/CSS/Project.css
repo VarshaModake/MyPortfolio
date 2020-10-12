@@ -1,36 +1,55 @@
 .projectsWrapper{
-    display:flex;
-    flex-direction: column;
-  height: 100vh;
+    
     border-top: 1px solid gray;
-    width:98%;
+    width:90%;
+    height: 70vh;
     text-overflow: inherit;
     justify-items: center;
     background-color: var(--mainColor);
-    
+    margin: auto;
     }
     .projectsWrapper h3{
-       
+       display: flex;
+       flex-direction: column;
         overflow-wrap: break-word;
         text-align: center;
     }
     #projectItem{
-        display: flex;
-        flex-wrap: wrap;
+        display:flex;
+        column-gap: 5%;
         justify-content: center;
-        justify-items: center;
        
-        -webkit-box-shadow: 7px 0px 20px -3px rgba(0,0,0,0.75);
-        -moz-box-shadow: 7px 0px 20px -3px rgba(0,0,0,0.75);
-        box-shadow: 7px 0px 20px -3px rgba(0,0,0,0.75);
     }
+    .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 30%;
+      
+        
+      }
+      
+      /* On mouse-over, add a deeper shadow */
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      .container {
+        padding: 2px 16px;
+      }
     #projectItem img{
         width:100%;
+        height: 25vh;
     }
-    #projectItem Div{
-    display: block;
-    padding: 0 3%;
-    border : 1px solid black;
-    margin: 2%;
-    width:30%;
-    }
+             
+           
+      /* Responsive columns - one column layout (vertical) on small screens */
+      @media screen and (max-width: 900px) {
+        .card {
+          width: 80%;
+          display: block;
+          margin-bottom: 20px;
+        }
+        .projectsWrapper{
+          height: 150vh;
+        }
+      }

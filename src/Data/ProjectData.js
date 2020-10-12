@@ -1,12 +1,12 @@
-import image1 from '../Assets/project1.png';
+import image1 from '../Assets/Music.jpg';
 import image2 from '../Assets/project2.png';
 
 const ProjectList=[
     {
         id:1,
         title:'Example react application',
-        description:'A React App MUSIC MASTER which I build ,Involving JS and core dev concept!',
-        link:'http://localhost:1234/music-master',
+        description:'Search a Top 10 song of your favourite singer.A React App MUSIC MASTER which I build ,Involving JS and core dev concept!',
+        link:'https://singerlover.herokuapp.com/',
         image:image1
     },
     {

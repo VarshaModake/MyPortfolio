@@ -1,0 +1,38 @@
+#summarywrapper{
+    background-color: var(--mainColor);
+    width: 90%;
+margin: auto;
+    height: 100%;
+    color: rgb(71, 69, 69);
+    -webkit-box-shadow: 4px -1px 13px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px -1px 13px -3px rgba(0,0,0,0.75);
+    box-shadow: 4px -1px 13px -3px rgba(0,0,0,0.75);
+}
+
+.header{
+    margin: 0 20px;
+    color: gray;
+}
+.nolist{
+    display: block;
+    margin:0;
+    line-break: auto;
+    
+}
+.nolist li{
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 2em;
+}
+
+@media only screen and (max-width:361px)
+{
+    #summarywrapper{
+        height:280%;
+    }
+}
+@media only screen and (min-width:400px) and (max-width:700px)
+{
+    #summarywrapper{
+        height:180%;
+    }
+}

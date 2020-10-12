@@ -5,7 +5,7 @@ export default function Skills(){
     return(
         <div className="right-column">
             <div >
-              <h3>SKILLS SET</h3>
+              <h4>SKILLS</h4>
             </div>
             <div className="bar">
               <div className="bar fill" style={{ width: '90%'}}>
@@ -38,6 +38,12 @@ export default function Skills(){
             <div className="bar">
               <div className="bar fill" style={{width: '70%'}}>
                 <div className="tag bold">JavaScript</div>
+              </div>
+              <span>70%</span>
+            </div>
+            <div className="bar">
+              <div className="bar fill" style={{width: '70%'}}>
+                <div className="tag bold">Web API/Micro-services</div>
               </div>
               <span>70%</span>
             </div>
