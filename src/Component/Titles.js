@@ -1,10 +1,10 @@
 import React,{Component} from 'react';
 
-const TitlesList=['an enthusiastic learner.',
+const TitlesList=['Enthusiastic learner.',
                   'Hard Worker.',
-                  'an adventure sicker.',
+                  'Adventure sicker.',
                   'Team Player.',
-                ' a self-motivated Experienced software engineer.'];
+                'self-motivated Experienced software engineer.'];
 export default class Titles extends Component{
     state={titleIndex:0,fadeIn:true};
     componentDidMount()
@@ -32,7 +32,7 @@ export default class Titles extends Component{
         const {titleIndex,fadeIn}=this.state;
         const title=TitlesList[this.state.titleIndex];
         return(
-            <p className={fadeIn ? 'title-fade-in' : 'title-fade-out'}> I am {title}</p>
+            <p className={fadeIn ? 'title-fade-in' : 'title-fade-out'}> <li> {title}</li></p>
         )
     }
 }
