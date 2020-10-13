@@ -1,5 +1,6 @@
 import image1 from '../Assets/Music.jpg';
 import image2 from '../Assets/project2.png';
+import image3 from '../Assets/BMW.jpg'
 
 const ProjectList=[
     {
@@ -15,6 +16,13 @@ const ProjectList=[
         description:'A Javascript Program that I build from scratch!',
         link:'https://github.com/VarshaModake/CandyCrush',
         image:image2
+    },
+    {
+        id:3,
+        title:'BMW Finance System',
+        description:'Develope application using C# .net, Ajax, SQL ,Web API ',
+        link:'',
+        image:image3
     }
 ]
 

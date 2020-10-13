@@ -17,8 +17,15 @@ width:90%;
    margin:auto;
    display: flex;
    width: 30%;
-   -webkit-box-shadow: -8px -3px 20px -8px rgba(0,0,0,0.75);
-   -moz-box-shadow: -8px -3px 20px -8px rgba(0,0,0,0.75);
-   box-shadow: -8px -3px 20px -8px rgba(0,0,0,0.75);
+
 } 
 
+@media only screen and (min-width:780px)
+{
+  .ContactItem {
+   
+    -webkit-box-shadow: -8px -3px 20px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px -3px 20px -8px rgba(0,0,0,0.75);
+    box-shadow: -8px -3px 20px -8px rgba(0,0,0,0.75);
+ } 
+}

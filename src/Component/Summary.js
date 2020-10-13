@@ -7,9 +7,10 @@ export default function Summary()
     return(
         <section id="summarywrapper">
             <h2 className="header">Summary</h2>
+            <br></br>
             <article>
                 <ul className="nolist">
-                    <li><b>Around 7 Years </b>of software experience in <b>evaluation, design, development, testing, maintenance and production support </b>using SDLC process, AGILE and SCRUM methodologies. Strong skills and experience in Object Oriented Programming using the .NET framework.</li>
+                    <li><b>Around 7 Years </b>of software experience in <b>evaluation, design, development, testing, maintenance and production support </b>using SDLC process, AGILE and SCRUM methodologies.</li>
                     <li>Currently learning latest technologies like Outsystem 11,NodeJS, Angular , and React Js. </li>
                     <li>Demonstrated proficiency in development using Microsoft.NET technologies like ASP.Net Web Forms, ASP.NET MVC, C# and AJAX Extensions.</li>
                     <li>Working Experience on creating Rest Services using <b>ASP .NET Web API</b></li>
