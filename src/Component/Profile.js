@@ -20,7 +20,7 @@ render()
           <div className="center-column">
             <div id="preview-shadow">
               
-                <h4>Who I am ?</h4>
+                <h4>About me</h4>
                 <p>
                 <Titles/>
                 </p>

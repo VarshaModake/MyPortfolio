@@ -12,7 +12,7 @@ export default function Summary()
             <article>
                 <ul className="nolist">
                 <li> <p>
-            Fullstact developer with primary focus on C# .net and react
+            Fullstack developer with primary focus on C# .net and react
             developments.
             <a href={Myfile} download="Varsha_Modake_Resume.doc">Download Resume</a>
           </p></li>

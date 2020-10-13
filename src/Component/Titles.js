@@ -4,7 +4,7 @@ const TitlesList=['an enthusiastic learner.',
                   'Hard Worker.',
                   'an adventure sicker.',
                   'Team Player.',
-                'I am a self-motivated Experienced software engineer.'];
+                ' a self-motivated Experienced software engineer.'];
 export default class Titles extends Component{
     state={titleIndex:0,fadeIn:true};
     componentDidMount()

@@ -36,6 +36,12 @@ margin: auto;
         height:175%;
     }
 }
+@media only screen and (min-width:701px) and (max-width:940px)
+{
+    #summarywrapper{
+        height:110%;
+    }
+}
 
 @media only screen and (min-width:374px) and (max-width:400px)
 {
