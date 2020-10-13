@@ -1,15 +1,21 @@
 import React from 'react';
 import '../CSS/Summary.css';
-
-
+import Myfile from '../Data/Varsha_Modake_resume .doc';
 export default function Summary()
 {
     return(
         <section id="summarywrapper">
             <h2 className="header">Summary</h2>
             <br></br>
+            
+          <br></br>
             <article>
                 <ul className="nolist">
+                <li> <p>
+            Fullstact developer with primary focus on C# .net and react
+            developments.
+            <a href={Myfile} download="Varsha_Modake_Resume.doc">Download Resume</a>
+          </p></li>
                     <li><b>Around 7 Years </b>of software experience in <b>evaluation, design, development, testing, maintenance and production support </b>using SDLC process, AGILE and SCRUM methodologies.</li>
                     <li>Currently learning latest technologies like Outsystem 11,NodeJS, Angular , and React Js. </li>
                     <li>Demonstrated proficiency in development using Microsoft.NET technologies like ASP.Net Web Forms, ASP.NET MVC, C# and AJAX Extensions.</li>
@@ -22,11 +28,7 @@ export default function Summary()
                     <li>I am a self-motivated Experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success.
 Well-versed in technology and writing code to create systems that are reliable and user-friendly. Skilled leader who has the proven ability to motivate, educate, and manage a team of professionals to build software programs and effectively track changes.</li>
                 </ul>
-                <p>
-            Fullstact developer with primary focus on C# .net and react
-            developments.
-            <a href="../Varsha_Modake_resume.doc" download>Download Resume</a>
-          </p>
+               
             </article>
         </section>
     )

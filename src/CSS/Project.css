@@ -2,7 +2,7 @@
     
     border-top: 1px solid gray;
     width:90%;
-    height: 70vh;
+    height: 82vh;
     text-overflow: inherit;
     justify-items: center;
     background-color: var(--mainColor);
@@ -50,7 +50,7 @@
           margin-bottom: 20px;
         }
         .projectsWrapper{
-          height: 150vh;
+          height: 160vh;
         }
       }
 
@@ -61,7 +61,7 @@
         }
       }
 
-      @media screen and (min-width:401px) and (max-width:700px) {
+      @media screen and (min-width:401px) and (max-width:892px) {
         
         .projectsWrapper{
           height: 180%;
