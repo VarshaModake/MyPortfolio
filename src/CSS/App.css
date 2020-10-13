@@ -1,46 +1,6 @@
-.App {  
-  width:90%;
-  height: 70vh;
-  margin: auto;
-  border: var(--secondaryColor);
-  background-color: var(--mainColor);
-  border-radius: 7px 7px 0 0;
-  -webkit-box-shadow: 4px -1px 13px -3px rgba(0,0,0,0.75);
--moz-box-shadow: 4px -1px 13px -3px rgba(0,0,0,0.75);
-box-shadow: 4px -1px 13px -3px rgba(0,0,0,0.75);
-}
-
-@media only screen and (max-width:1024px)
-{
-  .App{
-    height: 130%;
-  }
-}
-
-@media only screen and (max-width:600px)
-{
-  .App{
-    height: 170%;
-  }
-}
-
-@media only screen and (min-width:600px) and (max-width:1023px)
-{
-  .App{
-    height: 170%;
-  }
-}
-
-/* @media only screen and (max-width:800px)
-{
-  .App{
-    height: 157%;
-  }
-} */
-
-@media only screen and (max-width:450px)
-{
-  .App{
-    height: 179%;
-  }
+.App{
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }

@@ -11,16 +11,7 @@ import Contact from './Component/Contact';
 import Summary from './Component/Summary';
 
 ReactDOM.render(
-  <Router history={createBrowserHistory()}>
-  <React.StrictMode>
-    
-      <Switch>
-      <Route exact path='/' render={()=><NavBar><App /></NavBar>}/>
-        <Route path='/Projects' render={()=><NavBar><Projects /></NavBar>}/>
-        <Route path='/Contact' render={()=><NavBar><Contact /></NavBar>}/>
-        <Route path='/Summary' render={()=><NavBar><Summary /></NavBar>}/>
-      </Switch>
-  </React.StrictMode>  </Router>,
+ <React.StrictMode><App /></React.StrictMode>,
   document.getElementById('root')
 );
 

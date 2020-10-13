@@ -59,11 +59,12 @@ a{
     align-items: center;
     margin: 0;
     width:100%;
+    row-gap: 30px;
   }
   
   .ProfileWrapper{
     align-items: center;
-    height: 200vh;
+   
   }
   .tab a{
     padding: 1px 0px ;
@@ -88,13 +89,8 @@ a{
   
 } 
 
-@media only screen  and (min-width:899px)
-{
-  .projectsWrapper{
-  height:100vh;
-  }
- 
-}
+
+
 @media only screen and (max-width:500px)
 {
   #projectItem{

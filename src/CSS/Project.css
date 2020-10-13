@@ -1,12 +1,14 @@
 .projectsWrapper{
-    
-    border-top: 1px solid gray;
-    width:90%;
-    height: 82vh;
-    text-overflow: inherit;
-    justify-items: center;
-    background-color: var(--mainColor);
-    margin: auto;
+  border-top: 1px solid gray;
+  width:90%;
+  text-overflow: inherit;
+  justify-items: center;
+  background-color: var(--mainColor);
+  margin: auto;
+  border-radius: 7px 7px 0 0;
+  -webkit-box-shadow: 4px -1px 13px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px -1px 13px -3px rgba(0,0,0,0.75);
+box-shadow: 4px -1px 13px -3px rgba(0,0,0,0.75);
     }
     .projectsWrapper h3{
        display: flex;
@@ -41,29 +43,4 @@
         height: 25vh;
     }
              
-           
-      /* Responsive columns - one column layout (vertical) on small screens */
-      @media screen and (max-width: 900px) {
-        .card {
-          width: 80%;
-          display: block;
-          margin-bottom: 20px;
-        }
-        .projectsWrapper{
-          height: 160vh;
-        }
-      }
-
-      @media screen and (min-width:280px) and (max-width:400px) {
-        
-        .projectsWrapper{
-          height: 220%;
-        }
-      }
-
-      @media screen and (min-width:401px) and (max-width:892px) {
-        
-        .projectsWrapper{
-          height: 180%;
-        }
-      }
+     

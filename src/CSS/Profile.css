@@ -6,9 +6,13 @@
     grid-template-areas: 
     'left-column center-column right-column';
     column-gap: 1%;
-    width: 98%;
+    width: 90%;
     margin: auto;
-    
+    background-color: var(--mainColor);
+    border-radius: 7px 7px 0 0;
+    -webkit-box-shadow: 4px -1px 13px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px -1px 13px -3px rgba(0,0,0,0.75);
+  box-shadow: 4px -1px 13px -3px rgba(0,0,0,0.75);
 }
 
 .left-column{
@@ -84,7 +88,7 @@ p{
         'left-column'
         'center-column'
         'right-column';
-        row-gap: 3%;
+        row-gap: 0.5%;
 
     } 
     .center-column{
@@ -109,7 +113,7 @@ p{
         padding: 0;
     }
     #preview-shadow{
-        height: 31vh;
+      
         width: 100%;
         padding: 0;
     }

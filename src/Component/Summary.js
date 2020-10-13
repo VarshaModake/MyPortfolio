@@ -4,13 +4,10 @@ import Myfile from '../Data/Varsha_Modake_resume .doc';
 export default function Summary()
 {
     return(
-        <section id="summarywrapper">
+        <div id="summarywrapper">
             <h2 className="header">Summary</h2>
             <br></br>
-            
-          <br></br>
-            <article>
-                <ul className="nolist">
+                            <ul className="nolist">
                 <li> <p>
             Fullstack developer with primary focus on C# .net and react
             developments.
@@ -29,8 +26,8 @@ export default function Summary()
 Well-versed in technology and writing code to create systems that are reliable and user-friendly. Skilled leader who has the proven ability to motivate, educate, and manage a team of professionals to build software programs and effectively track changes.</li>
                 </ul>
                
-            </article>
-        </section>
+           
+        </div>
     )
         
     
