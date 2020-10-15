@@ -11,14 +11,13 @@ html,body{
   font-family: 'Roboto Slab', serif;
   font-size: 15px;
   width:100%;
-  overflow:auto;
+  overflow: auto;
   
 }
 body{
   background: url(./Assets/Background.jpg);
- 
-  object-fit: cover;
-  
+   object-fit: cover;
+  width: 100%;
 }
 
 h1,h2,h3,h4,h5,h6,strong{
@@ -59,7 +58,10 @@ a{
     align-items: center;
     margin: 0;
     width:100%;
-    row-gap: 30px;
+    
+  }
+  #projectItem .card{
+    padding: 3%;
   }
   
   .ProfileWrapper{
